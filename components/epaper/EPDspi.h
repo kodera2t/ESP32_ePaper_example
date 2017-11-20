@@ -15,19 +15,19 @@
 #include <stdint.h>
 #include "spi_master_lobo.h"
 
-#define EPD_DISPLAY_WIDTH	296
-#define EPD_DISPLAY_HEIGHT	128
+#define EPD_DISPLAY_WIDTH	200
+#define EPD_DISPLAY_HEIGHT	200
 
-#define SCK_Pin		18
-#define MOSI_Pin	23
-//#define MISO_Pin	19
-#define DC_Pin		26
-#define BUSY_Pin	32
-#define RST_Pin		27
-#define CS_Pin		5
+#define SCK_Pin		14
+#define MOSI_Pin	15
+#define MISO_Pin	2
+#define DC_Pin		17
+#define BUSY_Pin	21
+#define RST_Pin		16
+#define CS_Pin		4
 // ePaper display can be powered from GPIO
 // if powered directly from Vcc, set this to 0
-#define POWER_Pin	22
+#define POWER_Pin	0
 
 #define DC_VAL (1 << DC_Pin)
 

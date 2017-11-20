@@ -195,7 +195,8 @@ void app_main()
 		.max_transfer_sz = 5*1024,		// max transfer size is 4736 bytes
     };
     spi_lobo_device_interface_config_t devcfg={
-        .clock_speed_hz=40000000,		// SPI clock is 40 MHz
+        //.clock_speed_hz=40000000,		// SPI clock is 40 MHz
+        .clock_speed_hz=6000000,        // SPI clock is 6 MHz/////////////////////////////
         .mode=0,						// SPI mode 0
         .spics_io_num=-1,				// we will use external CS pin
 		.spics_ext_io_num = CS_Pin,		// external CS pin
@@ -389,7 +390,7 @@ void app_main()
     	ftype++;
     	if (ftype > 10) {
     		ftype = 1;
-    		for (int t=40; t>0; t--) {
+    		for (int t=4; t>0; t--) {
 				printf("Wait %d seconds ...  \r", t);
 				fflush(stdout);
 				EPD_wait(1000);
@@ -406,7 +407,7 @@ void app_main()
 		_fg = 15;
 		_bg = 0;
 
-		EPD_drawRect(1,1,294,126, EPD_BLACK);
+		EPD_drawRect(1,1,200,200, EPD_BLACK);
 
 		int y = 4;
 		tstart = clock();
