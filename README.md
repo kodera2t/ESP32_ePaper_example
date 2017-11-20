@@ -3,6 +3,8 @@
 
 ---
 
+SPI pinout and clock speed are modified for ePaper plus ESP32-ADB board
+
 
 #### Features
 
