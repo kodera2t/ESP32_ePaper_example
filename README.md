@@ -5,6 +5,8 @@
 
 SPI pinout and clock speed are modified for ePaper plus ESP32-ADB board
 
+https://www.tindie.com/products/microwavemont/epaper-plus-esp32-adb/
+
 
 #### Features
 
