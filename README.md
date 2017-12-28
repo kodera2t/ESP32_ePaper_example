@@ -7,6 +7,10 @@ SPI pinout and clock speed are modified for ePaper plus ESP32-ADB board
 
 https://www.tindie.com/products/microwavemont/epaper-plus-esp32-adb/
 
+For wider (2.9 inch) version ESP32-ADB, please change resolution from 200x200 to 296x128 in
+```
+ESP32_ePaper_example/components/epaper/EPDspi.h
+```
 
 #### Features
 
